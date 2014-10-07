@@ -1,21 +1,6 @@
-﻿File List:
-mp3.cc – Provided source file for mp3_send
-mp3.hh – provided header file for mp3_send
-linkedlist.cc – Implementation of linked list
-Makefile
-mp3client.cc – source code for client application
-mp3client.hh
-mp3server.cc – source code for server application
-mp3server.hh
-
 TEAM MEMBERS:
 Fardin abdi taghi abad
 Rick Pospisil
-
-Team Member Contribution:
-Rick – setup of initial repository, created Makefile, implementation of setting up socket for sending and receiving udp packets, fixed minor bugs, wrote README file
-
-Fardin – Implemented congestion control related protocols, fixed several bugs, added linkedlist.cc to the repository
 
 Server:
 Upon startup, the server polls the designated UDP port for incoming initializing packets from the client (Initialization packets have the char “i” as the first byte in the header). When this special packet is received, the server sends an ACK and calls new_client(). After an initialization phase, the program enter a while(1) loop where it begins sending the file over our implementation of the TCP algorithm. We used our favorite data structure, a linked list, to store all of our packet data. The structure for each packet is as follows:
