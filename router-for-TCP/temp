@@ -1,0 +1,19 @@
+/*
+				printf("none changed!");
+
+				if ( strcmp(node1 , addr) == 0 )
+				{
+					printf("node2 changed!") ; 
+//					node_to_be_changed = find(start, node2) ;
+				}
+				else if (strcmp(node2 , addr) == 0) 
+				{
+					printf("node1 changed!") ; 
+					//node_to_be_changed = find(start, node1) ;
+				}	
+				else
+				{
+					printf("none changed!");
+				}
+*/			
+

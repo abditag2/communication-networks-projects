@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Simulation>
+	<Topology>
+		<Link>
+			<node>1</node>
+			<node>2</node>
+			<cost>1</cost>
+		</Link>
+		<Link>
+			<node>1</node>
+			<node>3</node>
+			<cost>8</cost>
+		</Link>
+		<Link>
+			<node>2</node>
+			<node>3</node>
+			<cost>6</cost>
+		</Link>
+
+		<Link>
+			<node>1</node>
+			<node>4</node>
+			<cost>3</cost>
+		</Link>
+		<Link>
+			<node>5</node>
+			<node>4</node>
+			<cost>7</cost>
+		</Link>
+		<Link>
+			<node>5</node>
+			<node>3</node>
+			<cost>1</cost>
+		</Link>
+
+	</Topology>
+	<Events>
+		<Message>
+			<src>1</src>
+			<dst>3</dst>
+			<data>asdf</data>
+		</Message>
+		<Link>
+			<node>1</node>
+			<node>3</node>
+			<cost>-1</cost>
+		</Link>
+		<Message>
+			<src>1</src>
+			<dst>3</dst>
+			<data>fhgi</data>
+		</Message>
+		<Link>
+			<node>5</node>
+			<node>4</node>
+			<cost>-1</cost>
+		</Link>
+		<Message>
+			<src>5</src>
+			<dst>4</dst>
+			<data>abdi</data>
+		</Message>
+	</Events>
+</Simulation>
