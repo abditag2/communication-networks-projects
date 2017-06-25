@@ -1,7 +1,0 @@
-all : router
-
-router.o : router.c router.h
-	gcc router.c -o router
-
-clean :
-	-rm -f router
